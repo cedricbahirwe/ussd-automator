@@ -80,8 +80,7 @@ def print_package_for(version_name: str):
             version_info = subprocess.check_output(
                 ["adb", "shell", "dumpsys", "package", package], encoding='utf-8')
             if f"versionName={version_name}" in version_info:
-                print(f"Package: {package}, VersionName: {
-                      version_name}")
+                print(f"Package: {package}, VersionName: {version_name}")
         except subprocess.CalledProcessError:
             print("Passing here")
             pass
