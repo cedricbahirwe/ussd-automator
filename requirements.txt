@@ -1,1 +1,4 @@
-
+fastapi==0.114.1
+pydantic==2.9.1
+uiautomator2==3.2.4
+hypercorn==0.14.4
