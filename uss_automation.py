@@ -24,7 +24,7 @@ def perform_ussd(ussd_code: str):
     d.app_start("com.automate.myapp")
 
     # Take a screenshot
-    d.screenshot("home_screen.png")
+    # d.screenshot("home_screen.png")
 
     # Locate the ussd input field by resourceId, className, or any other property
     ussd_input_field = d(className="android.widget.EditText")
